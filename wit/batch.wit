@@ -8,8 +8,7 @@
 /// call instead of 100.
 ///
 /// The keys passed to a batch operation should be unique. If the list contains duplicate keys,
-/// an implementation may return an error, may deduplicate them, or may process each occurrence
-/// independently.
+/// an implementation may return an error, may deduplicate them, or may process each key independently.
 /// 
 /// A batch operation does not guarantee atomicity, meaning that if the batch operation fails, some
 /// of the keys may have been modified and some may not. 
